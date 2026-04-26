@@ -14,6 +14,7 @@ const setStyles = (variant?: string) => {
     lineHeight: "21px",
     verticalAlign: "middle",
     cursor: "pointer",
+    textDecoration: "none",
     // transition: theme.transition.fast,
     ":focus-visible": {
       //   outline: `2px solid ${theme.color.foc1}`,

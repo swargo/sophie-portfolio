@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { SiteHeader } from "@/components/SiteHeader";
+import { BackgroundDecorations } from "@/components/BackgroundDecorations";
+import "./globals.css";
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -20,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={geistSans.className}>
+        <BackgroundDecorations />
         <SiteHeader />
         {children}
       </body>

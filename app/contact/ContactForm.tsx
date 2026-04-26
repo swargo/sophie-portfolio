@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import styled from "@emotion/styled";
 import { Container } from "@/components/Container";
 import { theme } from "@/components/Theme";
+import { Link } from "@/components/Link";
 
 const PageWrapper = styled.div`
   max-width: 600px;
@@ -184,6 +185,7 @@ export const ContactForm = () => {
             <SuccessCard>
               <h3>Message sent!</h3>
               <p>Thanks for reaching out. I'll be in touch soon.</p>
+              <Link href="/" label="Back to home" />
             </SuccessCard>
           ) : (
             <Form onSubmit={handleSubmit}>

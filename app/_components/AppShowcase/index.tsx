@@ -6,7 +6,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { AppShowcaseProps } from "./types";
 
 const Section = styled.section`
-  margin: 0 64px 90px 64px;
+  margin: 0 64px;
   text-align: center;
   h2 {
     font-size: 36px;

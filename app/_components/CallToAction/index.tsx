@@ -8,12 +8,11 @@ const Section = styled.section`
   border-top-left-radius: 16px;
   border-bottom-right-radius: 16px;
   padding: ${theme.space[8]} ${theme.space[6]};
-  margin: 0 0 ${theme.space[8]} 0;
+  margin: 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: ${theme.space[5]};
   h2 {
     font-size: 36px;
     margin: 0;
@@ -21,6 +20,7 @@ const Section = styled.section`
   p {
     font-size: ${theme.fontSize.lg};
     margin: 0;
+    margin-bottom: ${theme.space[8]};
   }
 `;
 
