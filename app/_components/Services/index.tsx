@@ -6,11 +6,10 @@ const CodeIcon = () => (
   </svg>
 );
 
-const AccessibilityIcon = () => (
+const EyeIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <circle cx="12" cy="4" r="1" />
-    <path d="M9 9h6l-1 7-2 3-2-3-1-7" />
-    <path d="M6 9l2 3M18 9l-2 3" />
+    <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7Z" />
+    <circle cx="12" cy="12" r="3" />
   </svg>
 );
 
@@ -21,7 +20,7 @@ const BrushIcon = () => (
   </svg>
 );
 
-const icons = [<CodeIcon />, <AccessibilityIcon />, <BrushIcon />];
+const icons = [<CodeIcon />, <EyeIcon />, <BrushIcon />];
 
 interface Service {
   heading: string;

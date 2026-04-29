@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { SiteHeader } from "@/components/SiteHeader";
 import { BackgroundDecorations } from "@/components/BackgroundDecorations";
+import { Toast } from "@/components/Toast";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -22,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={geistSans.className}>
+        <Toast message="Currently under construction. Don't mind the broken links! App examples coming soon." />
         <BackgroundDecorations />
         <SiteHeader />
         {children}
