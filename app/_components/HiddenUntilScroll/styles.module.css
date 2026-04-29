@@ -1,0 +1,3 @@
+.hide {
+  transition: opacity 0.8s ease-out, transform 0.5s ease-out;
+}

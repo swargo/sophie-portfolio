@@ -1,0 +1,18 @@
+.headerLink {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5) var(--space-1) var(--space-5);
+  text-decoration: none;
+  color: inherit;
+}
+
+.name {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+}
+
+.role {
+  font-size: var(--font-size-md);
+  color: #666;
+}

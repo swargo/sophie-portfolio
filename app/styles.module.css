@@ -1,0 +1,9 @@
+.whiteContainer {
+  position: relative;
+  z-index: 14;
+}
+
+.grid {
+  display: grid;
+  gap: 200px;
+}

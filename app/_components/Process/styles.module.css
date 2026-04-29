@@ -1,0 +1,62 @@
+.section {
+  margin: 0 64px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: var(--space-8);
+}
+
+.timeline {
+  display: flex;
+  align-items: flex-start;
+}
+
+.step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 0 var(--space-3);
+}
+
+.step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-primary);
+}
+
+.stepNumber {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-tertiary);
+  color: var(--color-wh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-lg);
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  margin-bottom: var(--space-5);
+}
+
+.stepTitle {
+  font-size: var(--font-size-xl);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.stepDescription {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #444;
+  margin: 0;
+}

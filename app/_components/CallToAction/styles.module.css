@@ -1,0 +1,22 @@
+.section {
+  background-color: var(--color-secondary);
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  padding: var(--space-8) var(--space-6);
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.section p {
+  font-size: var(--font-size-lg);
+  margin: 0;
+  margin-bottom: var(--space-8);
+}

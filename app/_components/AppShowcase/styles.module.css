@@ -1,0 +1,101 @@
+.section {
+  margin: 0 64px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: var(--space-2);
+}
+
+.section h3 {
+  margin: 0;
+  margin-bottom: var(--space-6);
+  font-weight: var(--font-weight-regular);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-6);
+  text-align: left;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition:
+    transform 0.2s ease-out,
+    box-shadow 0.2s ease-out;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.15);
+}
+
+.cardHeader {
+  background-color: var(--color-tertiary);
+  padding: var(--space-6);
+  display: flex;
+  align-items: flex-end;
+  min-height: 100px;
+}
+
+.appName {
+  color: var(--color-wh);
+  font-size: 22px;
+  margin: 0;
+}
+
+.cardBody {
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.tag {
+  font-size: 11px;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background-color: var(--color-primary);
+  color: var(--color-tertiary);
+  border-radius: 4px;
+  padding: 3px var(--space-2);
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #444;
+  margin: 0 0 20px 0;
+  flex: 1;
+}
+
+.openLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-tertiary);
+}
+
+.openLink svg {
+  font-size: 16px;
+}

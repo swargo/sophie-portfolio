@@ -1,0 +1,17 @@
+.section {
+  text-align: center;
+  position: relative;
+  margin: var(--space-12) var(--space-5);
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: var(--space-6);
+}
+
+.section p {
+  text-align: left;
+  line-height: 1.5;
+  width: 60%;
+  margin: 0 auto;
+}
