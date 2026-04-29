@@ -1,3 +1,9 @@
+/*
+  Breakpoints
+  --md-breakpoint: 768px
+  Usage: @media (min-width: 768px)
+*/
+
 :root {
   --color-primary: #deebf2;
   --color-secondary: #EED9CB;

@@ -2,7 +2,7 @@
   background-color: var(--color-secondary);
   border-top-left-radius: 16px;
   border-bottom-right-radius: 16px;
-  padding: var(--space-8) var(--space-6);
+  padding: var(--space-8) var(--space-5);
   margin: 0;
   text-align: center;
   display: flex;
@@ -11,7 +11,7 @@
 }
 
 .section h2 {
-  font-size: 36px;
+  font-size: 28px;
   margin: 0;
 }
 
@@ -19,4 +19,14 @@
   font-size: var(--font-size-lg);
   margin: 0;
   margin-bottom: var(--space-8);
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: var(--space-8) var(--space-6);
+  }
+
+  .section h2 {
+    font-size: 36px;
+  }
 }

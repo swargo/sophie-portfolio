@@ -12,8 +12,8 @@
   background-color: var(--color-primary);
   border-top-right-radius: 16px;
   border-bottom-left-radius: 16px;
-  min-height: 50vh;
   display: flex;
+  flex-direction: column;
   margin: 0;
   overflow: hidden;
 }
@@ -25,12 +25,11 @@
 
 .section h2 {
   margin-top: 0;
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-xxl);
 }
 
 .leftColor {
-  padding: 60px;
-  flex-basis: 50%;
+  padding: var(--space-8) var(--space-5);
   display: flex;
   flex-wrap: wrap;
   animation: slideInLeft 0.7s ease-out both;
@@ -38,10 +37,7 @@
 
 .rightColor {
   background-color: var(--color-light-accent);
-  flex: 1;
-  padding: 60px;
-  border-top-right-radius: 16px;
-  flex-basis: 50%;
+  padding: var(--space-8) var(--space-5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,5 +60,27 @@
 .checkItem svg {
   color: var(--color-tertiary);
   flex-shrink: 0;
-  font-size: 22px;
+}
+
+@media (min-width: 768px) {
+  .section {
+    flex-direction: row;
+    min-height: 50vh;
+  }
+
+  .section h2 {
+    font-size: var(--font-size-3xl);
+  }
+
+  .leftColor {
+    padding: 60px;
+    flex-basis: 50%;
+  }
+
+  .rightColor {
+    padding: 60px;
+    border-top-right-radius: 16px;
+    flex: 1;
+    flex-basis: 50%;
+  }
 }

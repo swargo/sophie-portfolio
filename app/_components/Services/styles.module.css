@@ -1,10 +1,10 @@
 .section {
   display: flex;
-  margin: 0 64px;
-  padding-top: 140px;
-  gap: var(--space-6);
+  flex-direction: column;
+  margin: 0 var(--space-4);
+  padding-top: 80px;
+  gap: var(--space-10);
   text-align: center;
-  flex-wrap: wrap;
 }
 
 .section h3 {
@@ -26,12 +26,10 @@
 
 .item {
   position: relative;
-  justify-content: space-between;
   display: flex;
-  flex: 1 1 15%;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  padding: 68px 38px 32px 38px;
+  padding: 68px 24px 32px 24px;
   box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.1);
   background-color: white;
 }
@@ -52,9 +50,28 @@
   left: 0;
   right: 0;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon svg {
   color: var(--color-wh);
-  font-size: 50px;
+}
+
+@media (min-width: 768px) {
+  .section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 64px;
+    padding-top: 140px;
+    gap: var(--space-6);
+  }
+
+  .item {
+    flex: 1 1 15%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 68px 38px 32px 38px;
+  }
 }

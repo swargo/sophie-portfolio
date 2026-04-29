@@ -1,10 +1,10 @@
 .section {
-  margin: 0 64px;
+  margin: 0 var(--space-4);
   text-align: center;
 }
 
 .section h2 {
-  font-size: 36px;
+  font-size: 28px;
   margin-bottom: var(--space-2);
 }
 
@@ -16,7 +16,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: 1fr;
   gap: var(--space-6);
   text-align: left;
 }
@@ -98,4 +98,18 @@
 
 .openLink svg {
   font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .section {
+    margin: 0 64px;
+  }
+
+  .section h2 {
+    font-size: 36px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
 }

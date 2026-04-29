@@ -5,5 +5,11 @@
 
 .grid {
   display: grid;
-  gap: 200px;
+  gap: 80px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    gap: 200px;
+  }
 }
