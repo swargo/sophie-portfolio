@@ -3,16 +3,18 @@ import { Geist } from "next/font/google";
 import { SiteHeader } from "@/components/SiteHeader";
 import { BackgroundDecorations } from "@/components/BackgroundDecorations";
 import { Toast } from "@/components/Toast";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const geistSans = Geist({
   subsets: ["latin"],
-  weight: "400"
+  weight: "400",
 });
 
 export const metadata: Metadata = {
   title: "Sophie Wargo — Web Developer",
-  description: "Custom websites built for small businesses. Clean, fast, and accessible.",
+  description:
+    "Custom websites built for small businesses. Clean, fast, and accessible.",
 };
 
 export default function RootLayout({
@@ -27,6 +29,7 @@ export default function RootLayout({
         <BackgroundDecorations />
         <SiteHeader />
         {children}
+        <Analytics />
       </body>
     </html>
   );
