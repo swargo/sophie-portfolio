@@ -1,16 +1,7 @@
-"use client";
-import styled from "@emotion/styled";
-
-const Layer = styled.div`
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  overflow: hidden;
-`;
+import styles from "./styles.module.css";
 
 export const BackgroundDecorations = () => (
-  <Layer aria-hidden="true">
+  <div className={styles.layer} aria-hidden="true">
     {/* top-right: three rings */}
     <svg
       style={{ position: "absolute", top: -160, right: -160 }}
@@ -72,5 +63,5 @@ export const BackgroundDecorations = () => (
         opacity="0.05"
       />
     </svg>
-  </Layer>
+  </div>
 );

@@ -1,12 +1,6 @@
+"use client";
 import { useEffect, useRef, useState } from "react";
-import styled from "@emotion/styled";
-
-const Hide = styled.div<any>`
-  opacity: ${(props) => (props.isVisible ? 1 : 0)};
-  transform: ${(props) =>
-    props.isVisible ? "translateY(0)" : "translateY(100px)"};
-  transition: opacity 0.8s ease-out, transform 0.5s ease-out;
-`;
+import styles from "./styles.module.css";
 
 export const HiddenUntilScroll = ({ children }: any) => {
   const elementRef = useRef<HTMLDivElement>(null);
@@ -30,7 +24,7 @@ export const HiddenUntilScroll = ({ children }: any) => {
             observerRef.current?.disconnect();
           }
         },
-        { threshold: 0.2 }
+        { threshold: 0.2 },
       );
       if (elementRef.current) {
         observerRef.current.observe(elementRef.current);
@@ -56,8 +50,15 @@ export const HiddenUntilScroll = ({ children }: any) => {
   }, []);
 
   return (
-    <Hide ref={elementRef} isVisible={isVisible}>
+    <div
+      ref={elementRef}
+      className={styles.hide}
+      style={{
+        opacity: isVisible ? 1 : 0,
+        transform: isVisible ? "translateY(0)" : "translateY(100px)",
+      }}
+    >
       {children}
-    </Hide>
+    </div>
   );
 };

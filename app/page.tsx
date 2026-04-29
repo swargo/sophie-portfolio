@@ -1,5 +1,4 @@
-"use client";
-import styled from "@emotion/styled";
+import styles from "./styles.module.css";
 import { Container } from "@/components/Container";
 import { HiddenUntilScroll } from "@/components/HiddenUntilScroll";
 import { ProjectShowcase } from "@/components/ProjectShowcase";
@@ -14,20 +13,10 @@ import { apps } from "@/content/apps";
 import { processSteps } from "@/content/process";
 import { copy } from "@/content/copy";
 
-const WhiteContainer = styled.div`
-  position: relative;
-  z-index: 14;
-`;
-
-const Grid = styled.div`
-  display: grid;
-  gap: 200px;
-`;
-
 const Home = () => {
   return (
     <Container>
-      <WhiteContainer>
+      <div className={styles.whiteContainer}>
         <Hero
           tagline={copy.hero.tagline}
           headline={copy.hero.headline}
@@ -36,7 +25,7 @@ const Home = () => {
           checklist={copy.hero.checklist}
         />
         <About heading={copy.about.heading} body={copy.about.body} />
-        <Grid>
+        <div className={styles.grid}>
           <HiddenUntilScroll>
             <Services services={copy.services} />
           </HiddenUntilScroll>
@@ -65,8 +54,8 @@ const Home = () => {
               href={copy.cta.href}
             />
           </HiddenUntilScroll>
-        </Grid>
-      </WhiteContainer>
+        </div>
+      </div>
     </Container>
   );
 };

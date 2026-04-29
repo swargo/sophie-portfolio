@@ -1,5 +1,5 @@
-import styled from "@emotion/styled";
+import styles from "./styles.module.css";
 
-export const Container = styled.div`
-  padding: 20px 24px;
-`;
+export const Container = ({ children }: { children: React.ReactNode }) => (
+  <div className={styles.container}>{children}</div>
+);

@@ -1,70 +1,27 @@
-"use client";
-import styled from "@emotion/styled";
-import { theme } from "@/components/Theme";
-import CodeIcon from "@mui/icons-material/Code";
-import BrushIcon from "@mui/icons-material/Brush";
-import DisabledVisibleIcon from "@mui/icons-material/DisabledVisible";
+import styles from "./styles.module.css";
+const CodeIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <polyline points="16 18 22 12 16 6" />
+    <polyline points="8 6 2 12 8 18" />
+  </svg>
+);
 
-const Section = styled.section`
-  display: flex;
-  margin: 0 64px;
-  padding-top: 140px;
-  gap: ${theme.space[6]};
-  text-align: center;
-  flex-wrap: wrap;
-  h3 {
-    margin-bottom: ${theme.space[5]};
-    font-size: 24px;
-  }
-  p {
-    margin-top: ${theme.space[5]};
-    margin-bottom: ${theme.space[5]};
-    font-size: 18px;
-    line-height: 1.4;
-  }
-  hr {
-    width: 54px;
-    margin: 0 auto;
-  }
-`;
+const AccessibilityIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <circle cx="12" cy="4" r="1" />
+    <path d="M9 9h6l-1 7-2 3-2-3-1-7" />
+    <path d="M6 9l2 3M18 9l-2 3" />
+  </svg>
+);
 
-const Item = styled.div`
-  position: relative;
-  justify-content: space-between;
-  display: flex;
-  flex: 1 1 15%;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 68px 38px 32px 38px;
-  -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.1);
-  background-color: white;
-`;
+const BrushIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M18.37 2.63 14 7l-1.59-1.59a2 2 0 0 0-2.82 0L8 7l9 9 1.59-1.59a2 2 0 0 0 0-2.82L17 10l4.37-4.37a2.12 2.12 0 1 0-3-3Z" />
+    <path d="M9 8c-2 3-4 3.5-7 4l8 10c2-1 6-5 6-7" />
+  </svg>
+);
 
-const Content = styled.div`
-  margin-bottom: auto;
-`;
-
-const Icon = styled.div`
-  border-radius: 50%;
-  background-color: ${theme.color.bk};
-  width: 98px;
-  height: 98px;
-  padding: ${theme.space[5]};
-  box-sizing: border-box;
-  position: absolute;
-  top: -49px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  svg {
-    color: ${theme.color.wh};
-    font-size: 50px;
-  }
-`;
-
-const icons = [<CodeIcon />, <DisabledVisibleIcon />, <BrushIcon />];
+const icons = [<CodeIcon />, <AccessibilityIcon />, <BrushIcon />];
 
 interface Service {
   heading: string;
@@ -76,16 +33,16 @@ interface ServicesProps {
 }
 
 export const Services = ({ services }: ServicesProps) => (
-  <Section>
+  <section className={styles.section}>
     {services.map((service, i) => (
-      <Item key={service.heading}>
-        <Content>
-          <Icon>{icons[i]}</Icon>
+      <div className={styles.item} key={service.heading}>
+        <div className={styles.content}>
+          <div className={styles.icon}>{icons[i]}</div>
           <h3>{service.heading}</h3>
           <hr />
           <p>{service.body}</p>
-        </Content>
-      </Item>
+        </div>
+      </div>
     ))}
-  </Section>
+  </section>
 );
