@@ -41,7 +41,7 @@
 }
 
 .cardHeader {
-  background-color: var(--color-blush-600);
+  background-color: var(--color-lavender-200);
   padding: var(--space-6);
   display: flex;
   align-items: flex-end;
@@ -49,7 +49,7 @@
 }
 
 .appName {
-  color: var(--color-neutral-paper);
+  color: var(--color-lavender-800);
   font-size: var(--font-size-lg);
   margin: 0;
 }
