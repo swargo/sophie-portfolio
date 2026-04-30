@@ -1,5 +1,4 @@
 .button {
-  font-family: "Montserrat", sans-serif;
   font-weight: var(--font-weight-regular);
   border: 1px solid var(--color-neutral-ink);
   outline: none;
