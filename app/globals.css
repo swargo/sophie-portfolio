@@ -5,20 +5,57 @@
 */
 
 :root {
-  --color-primary: #deebf2;
-  --color-secondary: #EED9CB;
-  --color-tertiary: #4B6B94;
-  --color-dark-accent: #070D06;
-  --color-light-accent: #f0f6f9;
-  --color-bk: #000;
-  --color-wh: #FFF;
+/* Color Ramps */
+  --color-blush-50: #fff5f6;
+  --color-blush-100: #ffe4e8;
+  --color-blush-200: #ffc8d1;
+  --color-blush-400: #f590a3;
+  --color-blush-600: #d8526c;
+  --color-blush-800: #8a2a3f;
+
+  --color-lavender-50: #f7f4ff;
+  --color-lavender-100: #ece5ff;
+  --color-lavender-200: #d6c8ff;
+  --color-lavender-400: #a890f3;
+  --color-lavender-600: #6f54cc;
+  --color-lavender-800: #3d2a82;
+
+  --color-butter-50: #fffaeb;
+  --color-butter-100: #fdf0c2;
+  --color-butter-200: #f9df8a;
+  --color-butter-400: #e6b73d;
+  --color-butter-600: #a87d10;
+  --color-butter-800: #5a4108;
+
+  --color-neutral-cream: #fdfaf6;
+  --color-neutral-paper: #ffffff;
+  --color-neutral-shell: #f6f0ea;
+  --color-neutral-stone-100: #e8e1d8;
+  --color-neutral-stone-200: #d4cabd;
+  --color-neutral-stone-400: #8a7e70;
+  --color-neutral-stone-600: #443c33;
+  --color-neutral-ink: #1a1814;
+
+  /* Color */
+  --color-primary: var(--color-blush-400);
+  --color-accent: var(--color-lavender-400);
+  --color-success: #2f8a59;
+  --color-warning: var(--color-butter-600);
+  --color-danger: var(--color-blush-600);
+  --color-info: #2c70c4;
+  --color-text: var(--color-neutral-ink);
 
   --font-size-sm: 12px;
-  --font-size-md: 14px;
-  --font-size-lg: 18px;
-  --font-size-xl: 24px;
+  --font-size-body: 14px;
+  --font-size-md: 18px;
+  --font-size-lg: 24px;
+  --font-size-xl: 28px;
   --font-size-xxl: 32px;
-  --font-size-3xl: 48px;
+  --font-size-hero: 48px;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-full: 999px;
 
   --font-weight-regular: 400;
   --font-weight-medium: 500;

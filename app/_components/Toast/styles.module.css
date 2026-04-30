@@ -3,11 +3,11 @@
   top: 20px;
   left: 50%;
   transform: translateX(-50%) translateY(0);
-  background-color: #b91c1c;
-  color: var(--color-wh);
+  background-color: var(--color-danger);
+  color: var(--color-neutral-paper);
   padding: 12px 20px;
-  border-radius: 8px;
-  font-size: var(--font-size-md);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-body);
   line-height: 1.5;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   z-index: 1000;

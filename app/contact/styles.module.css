@@ -10,20 +10,20 @@
 }
 
 .pageHeader h1 {
-  font-size: 28px;
+  font-size: var(--font-size-xl);
   margin: 0 0 var(--space-3) 0;
 }
 
 .pageHeader p {
-  font-size: var(--font-size-lg);
-  color: #555;
+  font-size: var(--font-size-md);
+  color: var(--color-text);
   margin: 0;
   line-height: 1.5;
 }
 
 .formCard {
   background-color: white;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   padding: var(--space-5);
   box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.1);
 }
@@ -41,7 +41,7 @@
 }
 
 .label {
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-body);
   font-weight: var(--font-weight-semibold);
 }
 
@@ -49,8 +49,8 @@
 .textarea {
   padding: var(--space-3) var(--space-4);
   border: 1px solid rgba(0, 0, 0, 0.18);
-  border-radius: 4px;
-  font-size: var(--font-size-md);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-body);
   font-family: inherit;
   width: 100%;
   box-sizing: border-box;
@@ -61,7 +61,7 @@
 
 .input:focus,
 .textarea:focus {
-  border-color: var(--color-tertiary);
+  border-color: var(--color-lavender-200);
   box-shadow: 0 0 0 3px var(--color-primary);
 }
 
@@ -73,22 +73,22 @@
 
 .submitButton {
   align-self: flex-start;
-  background-color: var(--color-bk);
-  color: var(--color-wh);
-  border: 1px solid var(--color-bk);
-  border-radius: 4px;
+  background-color: var(--color-neutral-ink);
+  color: var(--color-neutral-paper);
+  border: 1px solid var(--color-neutral-ink);
+  border-radius: var(--radius-sm);
   padding: 8.5px 18px;
   font-family: "Montserrat", sans-serif;
   font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-body);
   line-height: 21px;
   cursor: pointer;
   transition: background-color 0.15s ease, border-color 0.15s ease;
 }
 
 .submitButton:hover:not(:disabled) {
-  background-color: var(--color-dark-accent);
-  border-color: var(--color-dark-accent);
+  background-color: var(--color-neutral-ink);
+  border-color: var(--color-neutral-ink);
 }
 
 .submitButton:disabled {
@@ -97,8 +97,8 @@
 }
 
 .errorMessage {
-  font-size: var(--font-size-md);
-  color: #c0392b;
+  font-size: var(--font-size-body);
+  color: var(--color-danger);
   margin: 0;
 }
 
@@ -113,8 +113,8 @@
 }
 
 .successCard p {
-  font-size: var(--font-size-lg);
-  color: #555;
+  font-size: var(--font-size-md);
+  color: var(--color-text);
   margin: 0;
 }
 
@@ -134,7 +134,7 @@
   }
 
   .pageHeader h1 {
-    font-size: 36px;
+    font-size: var(--font-size-xxl);
   }
 
   .formCard {

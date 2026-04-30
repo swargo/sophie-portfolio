@@ -4,7 +4,7 @@
 }
 
 .section h2 {
-  font-size: 28px;
+  font-size: var(--font-size-xl);
   margin-bottom: var(--space-2);
 }
 
@@ -25,7 +25,7 @@
   display: flex;
   flex-direction: column;
   background-color: white;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-decoration: none;
@@ -42,7 +42,7 @@
 }
 
 .browserBar {
-  background-color: var(--color-light-accent);
+  background-color: var(--color-lavender-100);
   padding: 10px 14px;
   display: flex;
   align-items: center;
@@ -59,7 +59,7 @@
 .browserDots span {
   width: 9px;
   height: 9px;
-  border-radius: 50%;
+  border-radius: var(--radius-full);
   display: block;
 }
 
@@ -77,11 +77,11 @@
 
 .browserUrl {
   background-color: white;
-  border-radius: 4px;
+  border-radius: var(--radius-sm);
   flex: 1;
   padding: 3px 10px;
-  font-size: 11px;
-  color: var(--color-tertiary);
+  font-size: var(--font-size-sm);
+  color: var(--color-lavender-800);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -117,25 +117,25 @@
 }
 
 .tag {
-  font-size: 11px;
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-semibold);
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  background-color: var(--color-primary);
-  color: var(--color-tertiary);
-  border-radius: 4px;
+  background-color: var(--color-lavender-100);
+  color: var(--color-lavender-800);
+  border-radius: var(--radius-sm);
   padding: 3px 8px;
 }
 
 .projectName {
-  font-size: 20px;
+  font-size: var(--font-size-lg);
   margin: 0 0 var(--space-2) 0;
 }
 
 .description {
-  font-size: 15px;
+  font-size: var(--font-size-body);
   line-height: 1.5;
-  color: #444;
+  color: var(--color-text);
   margin: 0 0 20px 0;
   flex: 1;
 }
@@ -144,9 +144,9 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-body);
   font-weight: var(--font-weight-semibold);
-  color: var(--color-tertiary);
+  color: var(--color-lavender-600);
 }
 
 .visitLink svg {
@@ -159,7 +159,7 @@
   }
 
   .section h2 {
-    font-size: 36px;
+    font-size: var(--font-size-xxl);
   }
 
   .grid {

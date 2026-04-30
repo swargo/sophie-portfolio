@@ -1,5 +1,5 @@
 .section {
-  background-color: var(--color-secondary);
+  background-color: var(--color-blush-200);
   border-top-left-radius: 16px;
   border-bottom-right-radius: 16px;
   padding: var(--space-8) var(--space-5);
@@ -11,12 +11,12 @@
 }
 
 .section h2 {
-  font-size: 28px;
+  font-size: var(--font-size-xl);
   margin: 0;
 }
 
 .section p {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
   margin: 0;
   margin-bottom: var(--space-8);
 }
@@ -27,6 +27,6 @@
   }
 
   .section h2 {
-    font-size: 36px;
+    font-size: var(--font-size-xxl);
   }
 }

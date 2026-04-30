@@ -4,7 +4,7 @@
 }
 
 .section h2 {
-  font-size: 28px;
+  font-size: var(--font-size-xl);
   margin-bottom: var(--space-2);
 }
 
@@ -25,7 +25,7 @@
   display: flex;
   flex-direction: column;
   background-color: white;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-decoration: none;
@@ -41,7 +41,7 @@
 }
 
 .cardHeader {
-  background-color: var(--color-tertiary);
+  background-color: var(--color-blush-600);
   padding: var(--space-6);
   display: flex;
   align-items: flex-end;
@@ -49,8 +49,8 @@
 }
 
 .appName {
-  color: var(--color-wh);
-  font-size: 22px;
+  color: var(--color-neutral-paper);
+  font-size: var(--font-size-lg);
   margin: 0;
 }
 
@@ -69,20 +69,20 @@
 }
 
 .tag {
-  font-size: 11px;
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-semibold);
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  background-color: var(--color-primary);
-  color: var(--color-tertiary);
-  border-radius: 4px;
+  background-color: var(--color-lavender-100);
+  color: var(--color-lavender-800);
+  border-radius: var(--radius-sm);
   padding: 3px var(--space-2);
 }
 
 .description {
-  font-size: 15px;
+  font-size: var(--font-size-body);
   line-height: 1.5;
-  color: #444;
+  color: var(--color-text);
   margin: 0 0 20px 0;
   flex: 1;
 }
@@ -91,9 +91,9 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-body);
   font-weight: var(--font-weight-semibold);
-  color: var(--color-tertiary);
+  color: var(--color-lavender-600);
 }
 
 .openLink svg {
@@ -106,7 +106,7 @@
   }
 
   .section h2 {
-    font-size: 36px;
+    font-size: var(--font-size-xxl);
   }
 
   .grid {

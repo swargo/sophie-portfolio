@@ -8,11 +8,11 @@
 }
 
 .name {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
   font-weight: var(--font-weight-semibold);
 }
 
 .role {
-  font-size: var(--font-size-md);
-  color: #666;
+  font-size: var(--font-size-body);
+  color: var(--color-text);
 }

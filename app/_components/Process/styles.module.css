@@ -4,7 +4,7 @@
 }
 
 .section h2 {
-  font-size: 28px;
+  font-size: var(--font-size-xl);
   margin-bottom: var(--space-8);
 }
 
@@ -28,14 +28,14 @@
 .stepNumber {
   width: 48px;
   height: 48px;
-  border-radius: 50%;
-  background-color: var(--color-tertiary);
-  color: var(--color-wh);
+  border-radius: var(--radius-full);
+  background-color: var(--color-lavender-800);
+  color: var(--color-neutral-paper);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
   position: relative;
   z-index: 1;
   flex-shrink: 0;
@@ -43,14 +43,14 @@
 }
 
 .stepTitle {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
   margin: 0 0 var(--space-2) 0;
 }
 
 .stepDescription {
-  font-size: 15px;
+  font-size: var(--font-size-body);
   line-height: 1.5;
-  color: #444;
+  color: var(--color-text);
   margin: 0;
 }
 
@@ -60,7 +60,7 @@
   }
 
   .section h2 {
-    font-size: 36px;
+    font-size: var(--font-size-xxl);
   }
 
   .timeline {
@@ -82,6 +82,6 @@
     left: 50%;
     width: 100%;
     height: 2px;
-    background-color: var(--color-primary);
+    background-color: var(--color-accent);
   }
 }

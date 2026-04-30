@@ -9,7 +9,7 @@
 }
 
 .section {
-  background-color: var(--color-primary);
+  background-color: var(--color-blush-200);
   border-top-right-radius: 16px;
   border-bottom-left-radius: 16px;
   display: flex;
@@ -19,7 +19,7 @@
 }
 
 .section h1 {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
   margin-bottom: var(--space-3);
 }
 
@@ -36,7 +36,7 @@
 }
 
 .rightColor {
-  background-color: var(--color-light-accent);
+  background-color: var(--color-blush-50);
   padding: var(--space-8) var(--space-5);
   display: flex;
   align-items: center;
@@ -54,11 +54,11 @@
   display: flex;
   align-items: center;
   gap: var(--space-3);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
 }
 
 .checkItem svg {
-  color: var(--color-tertiary);
+  color: var(--color-lavender-600);
   flex-shrink: 0;
 }
 
@@ -69,7 +69,7 @@
   }
 
   .section h2 {
-    font-size: var(--font-size-3xl);
+    font-size: var(--font-size-hero);
   }
 
   .leftColor {
